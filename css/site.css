@@ -1,0 +1,367 @@
+#container {
+  display: block;
+  width: 960px;
+  margin: auto;
+  padding-bottom: 100vh;
+}
+
+input {
+  width: 50%;
+  max-width: 500px;
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+}
+
+#tabs {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 200px;
+  border: 1px solid #002650;
+}
+
+label.error {
+  color: yellow;
+  display: inline-block;
+  width: 25%;
+  max-width: 200px;
+  text-align: left;
+  padding-left: 2em;
+}
+
+::placeholder {
+  color: #9f4030;
+}
+
+input.right::placeholder {
+  color: grey;
+}
+
+fieldset {
+  border: 1px solid #b8b2b2fb;
+}
+
+#experience2,
+#experience3,
+#school2,
+#school3 {
+  display: none;
+  margin-top: 4em;
+}
+
+.addbutton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #b3a69b;
+  width: auto;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.addbutton:hover {
+  cursor: pointer;
+}
+
+.removebutton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ef8f0f;
+  width: auto;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.removebutton:hover {
+  cursor: pointer;
+}
+
+html {
+  background: linear-gradient(#1071B7 10%, rgba(255, 255, 255, .8) 15%, #25EAFC);
+}
+
+form {
+  width: 100%;
+}
+
+#tabs > ul {
+  border: 1px solid #002650;
+  padding: 0.5em;
+}
+
+#tabs > ul > li {
+  border-radius: 5px;
+}
+
+.submitbutton {
+  background-color: #006fb2;
+  border: 1px solid #00aeff;
+  color: #edf5fa;
+  margin-left: 4%;
+  padding: 0.5em;
+  width: 125px;
+}
+
+.submitbutton:hover {
+  cursor: pointer;
+  background-color: #008ce0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 130px;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  max-width: 1200px;
+  display: block;
+  margin: 1em auto;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: inline-block;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  margin: .5em;  
+  float: none;
+  display: block;
+  color: #b3a69b;
+  text-align: center;
+  font-size: 150%;
+  padding: 14px 16px;
+  height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#education {
+  width: 70%;
+  margin: 2em 0em 2em 2em;
+}
+
+#education input,
+#education label {
+  display: inline-block;
+  width: 20px;
+}
+
+#educationInfo h3 {
+  text-align: center;
+}
+
+#experience {
+  width: 70%;
+  margin: 2em 0em 2em 2em;
+}
+
+#experience input,
+#experience label {
+  display: inline-block;
+  width: 20px;
+}
+
+#experienceInfo h3 {
+  text-align: center;
+}
+#job1end,
+#job2end,
+#job3end {
+  display: none;
+}
+
+.currentjob {
+  width: 100%;
+}
+
+.currentjob input {
+  display: inline-block;
+  width: auto;
+  margin-left: 10%;
+}
+
+.currentjob label {
+  width: auto;
+  text-align: left;
+}
+
+#finish label {
+  width: 250px;
+  text-align: left;
+}
+
+#finish select {
+  width: auto;
+  display: inline-block;
+}
+
+#crimereasondiv {
+  margin-top: 1em;
+  display: none;
+}
+
+#agreement {
+  width: 200px;
+}
+
+input[value="Submit"] {
+  margin-left: 0px;
+}
+
+#dialog-confirm {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: .5em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222A39;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a { 
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #006FB2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#blizzardlink {
+    padding: 0;
+}
+
+#ui-id-5 {
+  color: white;
+}
+
+#dialog-confirm > p > span {
+  display: none;
+}
+
+select[name='state'] {
+  margin-top: 1em;
+  width: 100px;
+}
+
+select[name='state'] option {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

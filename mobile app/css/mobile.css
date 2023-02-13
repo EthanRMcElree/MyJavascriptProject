@@ -1,0 +1,317 @@
+#container {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  background-color: black;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin: 0% auto;
+}
+
+label {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+input.ui-input-text {
+  width: 100%;
+  background-color: white;
+  border-color: white;
+}
+
+input::placeholder {
+  color: #9f4030;
+}
+
+.error {
+  color: #9f4030;
+}
+
+.ui-content {
+  margin: 0%;
+  padding: 0%;
+}
+
+div[data-role="tabs"] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+label.error {
+  color: #9f4030;
+  display: inline-block;
+  width: 25%;
+  max-width: 200px;
+  text-align: left;
+  padding-left: 2em;
+}
+
+::placeholder {
+  color: #9f4030;
+}
+
+input.right::placeholder {
+  color: grey;
+}
+
+fieldset {
+  border: 1px solid #b8b2b2fb;
+}
+
+#experience2,
+#experience3,
+#school2,
+#school3 {
+  display: none;
+  margin-top: 4em;
+}
+
+.addbutton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #b3a69b;
+  width: auto;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.addbutton:hover {
+  cursor: pointer;
+}
+
+.removebutton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ef8f0f;
+  width: auto;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.removebutton:hover {
+  cursor: pointer;
+}
+
+html {
+  background-color: #002650;
+}
+
+form {
+  width: 100%;
+}
+
+#tabs > ul {
+  border: 1px solid #002650;
+  padding: 0.5em;
+}
+
+#tabs > ul > li {
+  border-radius: 5px;
+}
+
+.submitbutton {
+  background-color: #006fb2;
+  border: 1px solid #00aeff;
+  color: #edf5fa;
+  padding: 0.5em;
+  width: 125px;
+}
+
+.submitbutton:hover {
+  cursor: pointer;
+  background-color: #008ce0;
+}
+
+#education {
+  width: 70%;
+  margin: 2em 0em 2em 2em;
+}
+
+#education label {
+  width: 40px;
+}
+
+#education input {
+  position: relative;
+  left: 50px;
+  top: 30px;  
+}
+
+#educationInfo h3 {
+  text-align: center;
+}
+
+#experience {
+  width: 70%;
+  margin: 2em 0em 2em 2em;
+}
+
+#experience label {
+  width: 40px;
+}
+
+#experience input {
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+
+#experienceInfo h3 {
+  text-align: center;
+}
+
+#job1end,
+#job2end,
+#job3end {
+  display: none;
+}
+
+.currentjob {
+  width: 100%;
+}
+
+.currentjob input {
+  display: inline-block;
+  width: auto;
+  margin-left: 5%;
+}
+
+.currentjob label {
+    position: relative;
+    left: 10%;
+    bottom: 10px;
+}
+
+#crimereasondiv {
+  margin-top: 1em;
+  display: none;
+}
+
+#agreement {
+  width: 200px;
+}
+
+input[value="Submit"] {
+  margin-left: 0px;
+}
+
+#dialog-confirm {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0.5em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222a39;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #006fb2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#blizzardlink {
+  padding: 0;
+}
+
+#ui-id-5 {
+  color: white;
+}
+
+#dialog-confirm > p > span {
+  display: none;
+}
+
+select[name="state"] {
+  margin-top: 1em;
+  width: 100px;
+}
+
+select[name="state"] option {
+  text-align: center;
+}
+#job3end > div,
+#experience3 > div:nth-child(8),
+#job2end > div,
+#experience2 > div:nth-child(8),
+#job1end > div,
+#experience1 > div:nth-child(8),
+#personalInfo > fieldset > div:nth-child(33),
+#personalInfo > fieldset > div:nth-child(30) {
+    width: 12rem;
+}
+
+#felony-button {
+    width: 10rem;
+}
+
+#agreementdiv > div {
+    width: 20rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

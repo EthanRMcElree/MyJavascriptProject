@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://ethan-kirkwood-javascript.azurewebsites.net/js/jquery-ui-1.13.0.custom/jquery-ui-1.13.0.custom/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://ethan-kirkwood-javascript.azurewebsites.net/css/site.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar" class="navbar">
+        <a id='blizzardlink' href="https://www.blizzard.com/en-us/">
+          <img src="images/BlizzardEnt.jpg" height="100" alt="Blizzard Logo" />
+        </a>
+        <ul class="sm sm-simple">
+          <li class="dropdown">
+            <a class="dropbtn" href="#">Games&nbsp;<i class="fa fa-angle-down"></i></a>
+            <div class="dropdown-content">
+              <a href="https://playoverwatch.com/en-us/">Overwatch</a>
+              <a href="https://overwatch2.playoverwatch.com/en-us/trailer">Overwatch 2</a>
+              <a href="https://worldofwarcraft.com/en-us/">World of Warcraft</a>
+              <a href="https://heroesofthestorm.com/en-us/">Heroes of the Storm</a>
+              <a href="https://starcraft2.com/en-us/">Starcraft 2</a>
+            </div>
+          </li>
+          <li><a href="https://us.shop.battle.net/en-us">Shops</a></li>
+          <li><a href="https://news.blizzard.com/en-us">News</a></li>
+          <li class="dropdown">
+            <a class="dropbtn" href="#">Esports&nbsp;<i class="fa fa-angle-down"></i></a>
+            <div class="dropdown-content">
+              <a href="https://overwatchleague.com/en-us">Overwatch League</a>
+              <a href="https://overwatchleague.com/en-us/overwatch-world-cup">Overwatch World Cup</a>
+              <a href="https://playhearthstone.com/en-us/esports/">Hearthstone Masters</a>
+              <a href="https://pro.eslgaming.com/tour/sc2/">StarCarft 2 WCS</a>
+              <a href="https://worldofwarcraft.com/en-us/esports/arena">World of Warcraft Arena World Championship</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="container">
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Personal</a></li>
+          <li><a href="#tabs-2">Education</a></li>
+          <li><a href="#tabs-3">Experience</a></li>
+          <li><a href="#tabs-4">Finish</a></li>
+        </ul>
+        <div id="tabs-1">
+          <h2>Personal Information</h2>
+          <form id="personalInfo">
+            <fieldset>
+              <legend>Personal information</legend>
+              <label for="legalName">Legal name:</label>
+              <input type="text" id="legal-name" name="legalName" class="right" placeholder="First and last name" /><br />
+              <label for="preferredName">Preferred name:</label>
+              <input type="text" id="preferred-name" name="preferredName" class="right" placeholder="Optional"/><br />
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="address" /><br />
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city" /><br />
+              <label for="state">State:</label>
+              <select name="state" id="state" class="right">
+              </select> <br>
+              <label for="zip">Zip Code:</label>
+              <input type="text" id="zip" name="zip" class="right" placeholder="Five digits long"/><br />
+              <label for="email">Email address:</label>
+              <input type="text" id="email" name="email" class="right" placeholder="Enter a real email" /><br />
+              <label for="phone">Primary Phone:</label>
+              <input type="text" id="phone" name="phone" /><br />
+              <label for="website">Personal website:</label>
+              <input type="text" id="website" name="website" class="right" placeholder="Optional"/><br />
+              <label for="birthday">Birthday:</label>
+              <input type="text" id="birthday" name="birthday" /><br />
+              <label for="startdate">Earliest start date:</label>
+              <input type="text" id="startdate" name="startdate" /><br />
+              <input type="submit" value="Next" class="submitbutton" />
+            </fieldset>
+          </form>
+        </div>
+        <div id="tabs-2">
+          <h2>Education</h2>
+          <form id="educationInfo">
+            <fieldset>
+              <legend>Education</legend>
+              <h3>School Information</h3>
+              <div id="education">
+                <p>Did you attend any school or university?</p>
+                <input type="radio" id="eduyes" name="haseducation" value="Yes" />
+                <label for="haseducation">Yes</label>
+                <input type="radio" id="eduno" name="haseducation" value="No" />
+                <label for="haseducation">No</label>
+              </div>
+              <div id="schools">
+                <label for="schoolName">School name:</label>
+                <input type="text" id="school-name" name="schoolName" /><br />
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" class="right" placeholder="What degree did you get from your school"/><br />
+                <label for="degreeStatus">Degree status:</label>
+                <input type="text" id="dgstatus" name="degreeStatus" class="right" placeholder="Degree status in process"/><br />
+                <label for="Major">Major/area of study:</label>
+                <input type="text" id="major" name="major" /><br />
+                <label for="country">Country/region:</label>
+                <input type="text" id="country" name="country" class="right" placeholder="Country"/><br />
+                <div class="addbutton" id="addschool2">Add another school</div>
+                <div id="school2">
+                  <h3>School Information</h3>
+                  <label for="schoolName">School name:</label>
+                  <input type="text" id="school-name2" name="schoolName2" /><br />
+                  <label for="degree">Degree:</label>
+                  <input type="text" id="degree2" name="degree2" /><br />
+                  <label for="degreeStatus">Degree status:</label>
+                  <input type="text" id="dgstatus2" name="degreeStatus2" /><br />
+                  <label for="Major">Major/area of study:</label>
+                  <input type="text" id="major2" name="major2" /><br />
+                  <label for="country">Country/region:</label>
+                  <input type="text" id="country2" name="country2" /><br />
+                  <div class="removebutton" id="removeschool2">Remove school</div>
+                  <div class="addbutton" id="addschool3">Add another school</div>
+                </div>
+                <div id="school3">
+                  <h3>School Information</h3>
+                  <label for="schoolName">School name:</label>
+                  <input type="text" id="school-name3" name="schoolName3" /><br />
+                  <label for="degree">Degree:</label>
+                  <input type="text" id="degree3" name="degree3" /><br />
+                  <label for="degreeStatus">Degree status:</label>
+                  <input type="text" id="dgstatus3" name="degreeStatus3" /><br />
+                  <label for="Major">Major/area of study:</label>
+                  <input type="text" id="major3" name="major3" /><br />
+                  <label for="country">Country/region:</label>
+                  <input type="text" id="country3" name="country3" /><br />
+                  <div class="removebutton" id="removeschool3">Remove school</div>
+                </div>
+              </div>
+              <input type="submit" value="Next" class="submitbutton" />
+            </fieldset>
+          </form>
+        </div>
+        <div id="tabs-3">
+          <h2>Experience</h2>
+          <form id="experienceInfo">
+            <fieldset>
+              <legend>Experience</legend>
+              <h3>Work Experience</h3>
+              <div id="experience">
+                <p>Are you applying for your first job?</p>
+                <input type="radio" id="first" name="notfirstjob" value="Yes" />
+                <label for="notfirstjob">Yes</label>
+                <input type="radio" id="notfirst" name="notfirstjob" value="No" />
+                <label for="notfirstjob">No</label>
+              </div>
+              <div id="experience1">
+                <label for="employerName1">Employer name:</label>
+                <input type="text" id="employer-name1" name="employerName1" /><br />
+                <label for="jobTitle1">Job title:</label>
+                <input type="text" id="job-title1" name="jobTitle1" /><br />
+                <label for="startdate1">Start date:</label>
+                <input type="text" id="startdate1" name="startdate1" /><br />
+                <div class="currentjob">
+                  <input type="checkbox" id="job1current" name="currentjob1" checked />
+                  <label for="currentjob1"> This is your current job </label><br />
+                </div>
+                <div id="job1end" class="enddate1">
+                  <label for="enddate1">End date:</label>
+                  <input type="text" id="enddate1" name="enddate1" /><br />
+                </div>
+                <div class="addbutton" id="addjob2">Add another job</div>
+              </div>
+              <div id="experience2">
+                <label for="employerName2">Employer name:</label>
+                <input type="text" id="employer-name2" name="employerName2" /><br />
+                <label for="jobTitle2">Job title:</label>
+                <input type="text" id="job-title2" name="jobTitle2" /><br />
+                <label for="startdate2">Start date:</label>
+                <input type="text" id="startdate2" name="startdate2" /><br />
+                <div class="currentjob">
+                  <input type="checkbox" id="job2current" name="currentjob2" checked />
+                  <label for="currentjob2"> This is your current job </label><br />
+                </div>
+                <div id="job2end" class="enddate2">
+                  <label for="enddate2">End date:</label>
+                  <input type="text" id="enddate2" name="enddate2" /><br />
+                </div>
+                <div class="removebutton" id="removejob2">Remove job</div>
+                <div class="addbutton" id="addjob3">Add another job</div>
+              </div>
+              <div id="experience3">
+                <label for="employerName3">Employer name:</label>
+                <input type="text" id="employer-name3" name="employerName3" /><br />
+                <label for="jobTitle3">Job title:</label>
+                <input type="text" id="job-title3" name="jobTitle3" /><br />
+                <label for="startdate3">Start date:</label>
+                <input type="text" id="startdate3" name="startdate3" /><br />
+                <div class="currentjob">
+                  <input type="checkbox" id="job3current" name="currentjob3" checked />
+                  <label for="currentjob3"> This is your current job </label><br />
+                </div>
+                <div id="job3end" class="enddate3">
+                  <label for="enddate3">End date:</label>
+                  <input type="text" id="enddate3" name="enddate3" /><br />
+                </div>
+                <div class="removebutton" id="removejob3">Remove job</div>
+              </div>
+              <input type="submit" value="Next" class="submitbutton" />
+            </fieldset>
+          </form>
+        </div>
+        <div id="tabs-4">
+          <h2>Last Step</h2>
+          <form id="finish">
+            <label for="cars">Have you committed a felony?</label>
+            <select name="felony" id="felony">
+              <option value="">Yes or No</option>
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+            <br />
+            <br />
+            <div id="crimereasondiv">
+              <label for="crimereason">Please explain why.</label>
+              <br />
+              <br />
+              <textarea id="crimereason" name="crimereason" rows="4" cols="50"></textarea>
+            </div>
+            <div id="agreementdiv">
+              <h3>Agreement</h3>
+              <p>
+                I certify that the information contained in this application is correct to the best of my knowledge. I understand that to falsify information is
+                grounds for refusing to hire me, or for discharge should I be hired. I authorize any person, organization or company listed on this application
+                to furnish you any and all information concerning my previous employment, education and qualifications for employment. I also authorize you to
+                request and receive such information. In consideration for my employment, I agree to abide by the rules and regulations of the company, which
+                rules may be changed, withdrawn, added or interpreted at any time, at the company’s sole option and without prior notice to me. I also
+                acknowledge that my employment may be terminated, or any offer or acceptance of employment withdrawn, at any time, with or without cause, and
+                with or without prior notice at the option of the company or myself.
+              </p>
+              <label for="agreement">Electronic signature</label><br />
+              <input type="text" id="agreement" name="agreement" /><br />
+            </div>
+            <input type="submit" value="Submit" class="submitbutton" />
+          </form>
+          <div id="dialog-confirm" title="Congratulations">
+            <p>
+              <span class="" style="float: left; margin: 12px 12px 20px 0"></span>We received your application and will be contacting you shortly. Click okay to
+              forward back to our website.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-ui-1.13.0.custom/jquery-ui-1.13.0.custom/external/jquery/jquery.js"></script>
+      <script src="js/jquery-ui-1.13.0.custom/jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
+      <script src="js/jquery.validate.js"></script>
+      <script src="js/site.js"></script>
+      <script>
+        $(function () {
+          $("#accordion").accordion();
+        });
+      </script>
+    </div>
+  </body>
+</html>
