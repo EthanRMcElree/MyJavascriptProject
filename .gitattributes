@@ -1,0 +1,3 @@
+*.html vendored
+bootstrap.* vendored
+jquery.* vendored
